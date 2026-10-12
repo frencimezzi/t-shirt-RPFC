@@ -12,3 +12,15 @@ separate da un filo bianco, texture a pennello asciutto.
 
 Rigenerare: `pip install shapely cairosvg && python3 lettering.py`
 (ogni lettera è in `letters()`, coordinate in un quadrato 1000x1000).
+
+## Badge circolare "Rugby Parma – Since 1931"
+
+Testo bold condensato curvato in cerchio, puntini ai lati, pallone ovale al
+centro, finitura consumata. Testo convertito in tracciati (non serve il font).
+
+- `badge-bianco.svg/.png` – bianco su trasparente, per maglia nera
+- `badge-nero.svg/.png` – nero su trasparente, per maglia chiara
+- `badge-bianco-anteprima.png` – anteprima su fondo scuro
+- `mockup.png` – anteprima retro (grande) e fronte (cuore, piccolo)
+
+Rigenerare: `pip install shapely cairosvg fonttools && python3 badge.py && python3 mockup.py`
