@@ -1,11 +1,14 @@
 # T-shirt RPFC – lettering "Rugby Parma 1931"
 
-Scritta tonda con lettere incastrate (stile "Come Run With Us"), bianco e nero.
+Scritta tonda disegnata a mano nello stile di "Come Run With Us": nessun font,
+ogni lettera è un tratto a pennarello posizionato e dimensionato uno per uno
+dentro il cerchio. R gigante su due righe, minuscole miste, lettere incastrate
+separate da un filo bianco, texture a pennello asciutto.
 
-- `rugby-parma-1931.svg/.png` – nero su bianco
-- `rugby-parma-1931-negativo.svg/.png` – bianco su nero
-- `rugby-parma-1931-trasparente.svg/.png` – nero su trasparente (per la stampa)
+- `rugby-parma-1931.svg/.png` – nero su bianco, con texture
+- `rugby-parma-1931-negativo.svg/.png` – bianco su nero, con texture
+- `rugby-parma-1931-pulito.svg/.png` – nero su bianco, senza texture
+- `rugby-parma-1931-trasparente.svg/.png` – nero su trasparente, senza texture (per la stampa)
 
 Rigenerare: `pip install shapely cairosvg && python3 lettering.py`
-(forma delle lettere in `GLYPHS`, disposizione delle righe in `ROWS`,
-spessore in `STROKE`, filo bianco tra le lettere in `compose(gap=...)`).
+(ogni lettera è in `letters()`, coordinate in un quadrato 1000x1000).
